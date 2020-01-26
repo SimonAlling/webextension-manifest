@@ -1,0 +1,61 @@
+{
+  "name": "webextension-manifest",
+  "version": "0.1.0",
+  "description": "Type declarations for WebExtension manifest.json",
+  "keywords": [
+    "extension",
+    "WebExtension",
+    "manifest",
+    "manifest.json",
+    "typings",
+    "TypeScript"
+  ],
+  "author": {
+    "name": "Simon Alling",
+    "email": "alling.simon@gmail.com",
+    "url": "https://simonalling.se"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/SimonAlling/webextension-manifest",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimonAlling/webextension-manifest"
+  },
+  "bugs": {
+    "url": "https://github.com/SimonAlling/webextension-manifest/issues"
+  },
+  "files": [
+    "./index.d.ts",
+    "./types"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p . && embedme README.md",
+    "lint": "eslint . --ext .ts",
+    "prepublishOnly": "npm run verify && cli-confirm 'Publish?'",
+    "test": "tsd",
+    "verify": "repository-check-dirty && npm run build && npm test && npm pack"
+  },
+  "tsd": {
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "webextension-manifest": [
+          "."
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "cli-confirm": "^1.0.1",
+    "embedme": "^1.19.0",
+    "eslint": "^6.8.0",
+    "repository-check-dirty": "^1.0.2",
+    "tsd": "^0.11.0",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {}
+}

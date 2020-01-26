@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "webextension-manifest": [ "." ]
+        },
+        "esModuleInterop": true,
+        "lib": [
+            "esnext"
+        ],
+        "module": "es2015",
+        "moduleResolution": "node",
+	"noEmit": true,
+        "strict": true,
+        "target": "es2018"
+    },
+    "exclude": [],
+    "include": [
+        "./index.d.ts",
+	"./**/*.ts"
+    ]
+}
