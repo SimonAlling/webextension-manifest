@@ -65,7 +65,7 @@ npm test
 
 ### Code examples
 
-We use `embedme` for DRY, typechecked code examples in the readme.
+We use [`embedme`](https://www.npmjs.com/package/embedme) for DRY, typechecked code examples in the readme.
 Here's how to add one:
 
   1. Create a file containing the example in `docs/examples`, e.g. `embedme-example.ts`.
