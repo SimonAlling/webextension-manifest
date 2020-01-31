@@ -25,8 +25,8 @@
     "url": "https://github.com/SimonAlling/webextension-manifest/issues"
   },
   "files": [
-    "./index.d.ts",
-    "./types"
+    "index.d.ts",
+    "types"
   ],
   "type": "module",
   "sideEffects": false,
