@@ -2,7 +2,7 @@
  * AllOrNothing<T> represents either T or nothing.
  * It is different from Partial<T> in that it requires all or no keys from T.
  */
-export type AllOrNothing<T> = Either<T, {}>
+export type AllOrNothing<T> = T | { [K in keyof T]?: never };
 
 /**
  * Either makes it possible to have mutually exclusive keys.
@@ -11,14 +11,14 @@ export type AllOrNothing<T> = Either<T, {}>
  *     type Person = Either<{ age: number }, { birthDate: Date }>
  *
  */
-export type Either<A, B> = (A & NothingFrom<B>) | (B & NothingFrom<A>)
+export type Either<A, B> = (A & NothingFrom<B>) | (B & NothingFrom<A>);
 
 /**
  * NonEmptyArray represents non-empty arrays.
  */
-export type NonEmptyArray<T> = [T, ...T[]]
+export type NonEmptyArray<T> = [T, ...T[]];
 
 /**
  * NothingFrom<T> represents all types that don't have any of the keys in T.
  */
-export type NothingFrom<T> = { [P in keyof T]?: never }
+export type NothingFrom<T> = { [P in keyof T]?: never };
