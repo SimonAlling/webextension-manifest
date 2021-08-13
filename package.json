@@ -34,8 +34,10 @@
     "build": "tsc -p . && embedme README.md",
     "lint": "eslint . --ext .ts",
     "prepublishOnly": "npm run verify && cli-confirm 'Publish?'",
+    "prettier": "npx prettier --write .",
+    "prettier:check": "npx prettier --check .",
     "test": "tsd",
-    "verify": "repository-check-dirty && npm run build && npm test && npm pack"
+    "verify": "repository-check-dirty && npm run prettier:check && npm run build && npm test && npm pack"
   },
   "tsd": {
     "compilerOptions": {
@@ -48,14 +50,16 @@
     }
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.17.0",
-    "@typescript-eslint/parser": "^2.17.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
     "cli-confirm": "^1.0.1",
-    "embedme": "^1.19.0",
-    "eslint": "^6.8.0",
-    "repository-check-dirty": "^1.0.2",
-    "tsd": "^0.11.0",
-    "typescript": "^3.7.4"
+    "embedme": "^1.22.0",
+    "eslint": "^7.32.0",
+    "repository-check-dirty": "^3.1.0",
+    "tsd": "^0.17.0",
+    "typescript": "^4.3.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "prettier": "^2.3.2"
+  }
 }
