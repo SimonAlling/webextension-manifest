@@ -147,6 +147,10 @@ valid<M.Incognito>("split");
 valid<M.Incognito>("not_allowed");
 invalid<M.Incognito>("");
 
+valid<M.Key>(
+  "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApOOO5t/vQ/A345jYAaHSlF/OQyl9Acm8WiRodT81Lh2DDwyESXxJ8ADsVCcWCPSo24tSgVZoHRb5gvPCWp4YjiqFVAtCQFC6P0PmP00LgH6pAdHpavmIFhEUSgSnBHygmNbvVf2Hdiidi23UV1hmmii9G/PS6wKx5Cadd9EGwLYcYVv6qWrthLnd8TadWQlZSlbgQJaIBSZOpZUkVIzMYWcXYrKcR9J+NVBvRJku+tZmcZzmgZU5edpvjdenY/sDl524kMUpDn0ajZQaCkueDOyMTbs0/hldagzYBF3I67WhZt6Vh5vafWRO7H8io95CTrQ1c/ooFVWv2DiuEPNzVQIDAQAB"
+);
+
 valid<M.ManifestVersion>(2);
 invalid<M.ManifestVersion>(1);
 

@@ -52,6 +52,8 @@ tsd.expectAssignable<Manifest>({
     "96": "icon@2x.png",
   },
 
+  key: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqaEp1xRxEpWIQCUlbH0cbhT3WXrg3gleGO+N80EbTB0ROiXGXBun3NpHv5ZjQ1CazZbZ+2WndpkWmaxaDUemlt6oOmd7xL0csdfXbd5GcTOC9fp0FX8XJO/PQnvB+PPCpy13w/iELGp8KHvHQ8eA6K33ZgpxdzO/RTCin+p0rt0sZq070r8yIobZSbc+vl0r8B3OLQ5TH+31NNp0dlgDQDtB+d9dyz/XBEO3KWjFknHAJs1nkUzqVSoNVdHAZhov39sG9xBXPIuvdkVGOkI1UcKLkdk5tJibFuWD0T0MVA0pnfBMxDXkEQCink4DgyXn9wjUNZiLjSGalwq25lydlwIDAQAB",
+
   manifest_version: 2,
 
   name: "...",
