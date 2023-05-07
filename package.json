@@ -54,7 +54,7 @@
     "embedme": "^1.19.0",
     "eslint": "^6.8.0",
     "repository-check-dirty": "^1.0.2",
-    "tsd": "^0.11.0",
+    "tsd": "^0.28.1",
     "typescript": "^3.7.4"
   },
   "dependencies": {}
